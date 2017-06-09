@@ -257,145 +257,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/09/2017-06-09-React生命周期/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jiajie.Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cherry's Blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/06/09/2017-06-09-React生命周期/" itemprop="url">
-                  React生命周期
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-09T11:46:32+08:00">
-                2017-06-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/09/2017-06-09-React生命周期/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/09/2017-06-09-React生命周期/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><strong>使用ES6语法</strong></p>
-<h3 id="初始化阶段"><a href="#初始化阶段" class="headerlink" title="初始化阶段"></a>初始化阶段</h3><h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h4><pre><code>constructor(props) {
-  super(props); //必须的，否则 this.props will be undefined
-  this.state = {
-    color: props.initialColor
-  };
-}
-</code></pre><p>用来初始化state，绑定一些方法（bind methods）<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/09/2017-06-09-React生命周期/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/09/2017-02-21-Markdown语法示例/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -435,7 +296,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-09T10:54:15+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-09T17:02:09+08:00">
                 2017-06-09
               </time>
             
@@ -448,16 +309,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/06/09/2017-02-21-Markdown语法示例/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/06/09/2017-02-21-Markdown语法示例/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -482,10 +333,195 @@
 
       
         
-          <p>###强调效果<br><strong>粗体效果（双星号）</strong>  <strong>粗体效果（双下划线）</strong><br><em>斜体效果（单星号在前）斜体效果（单星号在后）</em><br><em>斜体效果（单下划线）</em><br>
+          
+            <h3 id="强调效果"><a href="#强调效果" class="headerlink" title="强调效果"></a>强调效果</h3><p><strong>粗体效果（双星号）</strong>  <strong>粗体效果（双下划线）</strong></p>
+<pre><code>**粗体效果（双星号）**  __粗体效果（双下划线）__
+</code></pre><p><em>斜体效果（单星号在前）斜体效果（单星号在后）</em></p>
+<pre><code>*斜体效果（单星号在前）斜体效果（单星号在后）*
+</code></pre><p><em>斜体效果（单下划线）</em></p>
+<pre><code>_斜体效果（单下划线）_
+</code></pre><h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>英文输入法下面三个下划线<code>___</code> ,必须单独成行</p>
+<hr>
+<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><blockquote>
+<p>引用效果</p>
+<blockquote>
+<p>引用中的引用</p>
+<blockquote>
+<p>引用中的引用中的引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<pre><code>` &gt; 引用效果
+  &gt;&gt; 引用中的引用
+  &gt;&gt;&gt;引用中的引用中的引用
+</code></pre><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><h1 id="大标题（标题下面三个-）"><a href="#大标题（标题下面三个-）" class="headerlink" title="大标题（标题下面三个=）"></a>大标题（标题下面三个=）</h1><pre><code>大标题（标题下面三个=）
+===
+</code></pre><h2 id="小标题（标题下面三个-）"><a href="#小标题（标题下面三个-）" class="headerlink" title="小标题（标题下面三个-）"></a>小标题（标题下面三个-）</h2><pre><code>小标题（标题下面三个-）
+---
+</code></pre><h1 id="一级标题（-）"><a href="#一级标题（-）" class="headerlink" title="一级标题（#）"></a>一级标题（#）</h1><h2 id="二级标题-（-）"><a href="#二级标题-（-）" class="headerlink" title="二级标题 （##）"></a>二级标题 （##）</h2><h3 id="三级标题-（-）"><a href="#三级标题-（-）" class="headerlink" title="三级标题 （###）"></a>三级标题 （###）</h3><h4 id="四级标题-（-）"><a href="#四级标题-（-）" class="headerlink" title="四级标题 （####）"></a>四级标题 （####）</h4><h5 id="五级标题-（-）"><a href="#五级标题-（-）" class="headerlink" title="五级标题 （#####）"></a>五级标题 （#####）</h5><h6 id="六级标题-（-）"><a href="#六级标题-（-）" class="headerlink" title="六级标题 （######）"></a>六级标题 （######）</h6><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><ul>
+<li>无序列表（符号之后有空格）<code>- 无序列表（符号之后有空格</code></li>
+</ul>
+<ul>
+<li>无序列表 （- <em> +都可以） `</em> 无序列表(- * +都可以)`</li>
+</ul>
+<ul>
+<li>无序列表   <code>+ 无序列表</code></li>
+</ul>
+<h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><ol>
+<li>有序列表</li>
+<li>有序列表</li>
+<li>有序列表</li>
+</ol>
+<h3 id="嵌套列表"><a href="#嵌套列表" class="headerlink" title="嵌套列表"></a>嵌套列表</h3><ul>
+<li>嵌套列表（+*-可循环使用）<ul>
+<li>嵌套列表</li>
+<li>嵌套列表<ul>
+<li>嵌套列表</li>
+<li>嵌套列表</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="文字超链接"><a href="#文字超链接" class="headerlink" title="文字超链接"></a>文字超链接</h3><p><a href="http://www.baidu.com" target="_blank" rel="external">百度</a></p>
+<pre><code>[百度](http://www.baidu.com)
+[百度](http://www.baidu.com &quot;百度&quot;)
+</code></pre><h3 id="图片超链接"><a href="#图片超链接" class="headerlink" title="图片超链接"></a>图片超链接</h3><p><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Mark" title="GitHub Mark"><br>Tooltips可省略，要设置大小只能借助HTML标记</p>
+<h3 id="索引超链接"><a href="#索引超链接" class="headerlink" title="索引超链接"></a>索引超链接</h3><p><a href="http://notes.stepway.me" target="_blank" rel="external">Stepway’s Notes</a><br><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/Octocat.png" alt="GitHub Octocat"></p>
+<h3 id="自动链接"><a href="#自动链接" class="headerlink" title="自动链接"></a>自动链接</h3><p><a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a></p>
+<pre><code>&lt;http://www.baidu.com&gt;
+</code></pre><h3 id="行内代码"><a href="#行内代码" class="headerlink" title="行内代码"></a>行内代码</h3><p><code>var a = &#39;hello world&#39;</code></p>
+<pre><code>`var b = &apos;hello Markdown&apos;`
+</code></pre><h3 id="段落代码"><a href="#段落代码" class="headerlink" title="段落代码"></a>段落代码</h3><pre><code>四个空格或者一个tab键
+var a = ’hello world‘
+var b = &apos;hello Markdown&apos;
+</code></pre><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><h3 id="转义字符"><a href="#转义字符" class="headerlink" title="转义字符"></a>转义字符</h3><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/09/2017-06-09-React生命周期/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jiajie.Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cherry's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/06/09/2017-06-09-React生命周期/" itemprop="url">
+                  React生命周期
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-09T15:54:16+08:00">
+                2017-06-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p><strong>使用ES6语法</strong></p>
+<h3 id="初始化阶段"><a href="#初始化阶段" class="headerlink" title="初始化阶段"></a>初始化阶段</h3><h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h4><pre><code>constructor(props) {
+  super(props); //必须的，否则 this.props will be undefined
+  this.state = {
+    color: props.initialColor
+  };
+}
+</code></pre><p>用来初始化state，绑定一些方法（bind methods）<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/06/09/2017-02-21-Markdown语法示例/#more" rel="contents">
+            <a class="btn" href="/2017/06/09/2017-06-09-React生命周期/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -580,16 +616,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/05/22/2017-02-21-Linux常用命令/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/05/22/2017-02-21-Linux常用命令/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -716,16 +742,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/07/gulp的使用/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/07/gulp的使用/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -848,16 +864,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/06/2017-02-21-Mac定时任务/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/2017-02-21-Mac定时任务/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -979,16 +985,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/06/全面解析JavaScript中&&和||/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/06/全面解析JavaScript中&&和||/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -1286,39 +1282,32 @@
 
   
 
-  
-    
-  
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"LJJCherry"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
 
   
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+
+
+
+
+	
+
+
+
+
+
   
 
 
 
 
 
+  
 
 
 
 
 
+  
 
 
 
