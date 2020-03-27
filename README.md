@@ -11,8 +11,6 @@
 
 2、npm i -g hexo-cli
 
-2、安装[next 主题](https://github.com/theme-next/hexo-theme-next)
-
 ### 日常开发
 
 1、在 source/\_posts 中写入 markdown 文档
@@ -28,3 +26,7 @@
 4、部署到服务器
 
     hexo deploy
+
+### 扩展链接
+
+1、安装[next 主题](https://github.com/theme-next/hexo-theme-next)
