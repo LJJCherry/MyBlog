@@ -1,4 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6,15 +15,11 @@
 
 
 <html class="theme-next mist use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
 
 
 
@@ -27,51 +32,8 @@
 
 
 
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -80,19 +42,41 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Cherry&#39;s Blogs">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Cherry&#39;s Blogs">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Cherry&#39;s Blogs">
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.4.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.4.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.4.2" color="#222">
+
+
+
+
+
+
 
 
 
@@ -101,13 +85,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
+    version: '6.4.2',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -119,19 +103,37 @@
 </script>
 
 
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title> Cherry's Blogs </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Cherry&#39;s Blogs">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Cherry&#39;s Blogs">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cherry&#39;s Blogs">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Cherry's Blogs</title>
+  
+
 
 
 
@@ -141,7 +143,7 @@
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?340874ba9357cbe81570aa4ac1185941";
+      hm.src = "https://hm.baidu.com/hm.js?41fc030db57d5570dd22f78997dc4a7e";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
@@ -152,39 +154,67 @@
 
 
 
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
 
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
 
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta ">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">Cherry's Blogs</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">浮生若梦,为欢几何</p>
       
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -192,45 +222,37 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
+          
+          <li class="menu-item menu-item-home menu-item-active">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -238,12 +260,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -256,16 +286,22 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/12/2017-02-21-Markdown语法示例/">
+  
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/27/react-redux源码解析/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="jiajie.Li">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Cherry's Blogs">
     </span>
 
@@ -275,12 +311,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/06/12/2017-02-21-Markdown语法示例/" itemprop="url">
-                  Markdown语法示例
+                <a class="post-title-link" href="/2020/03/27/react-redux源码解析/" itemprop="url">
+                  react-redux源码解析
                 </a>
               
             
@@ -289,20 +322,30 @@
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-12T10:55:55+08:00">
-                2017-06-12
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2020-03-27 15:52:53 / Modified: 15:54:04" itemprop="dateCreated datePublished" datetime="2020-03-27T15:52:53+08:00">2020-03-27</time>
             
 
             
+              
 
+              
             
           </span>
 
@@ -325,7 +368,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -333,28 +378,46 @@
 
       
         
-          <h3 id="强调效果"><a href="#强调效果" class="headerlink" title="强调效果"></a>强调效果</h3><p><strong>粗体效果（双星号）</strong>  <strong>粗体效果（双下划线）</strong></p>
-<pre><code>**粗体效果（双星号）**  __粗体效果（双下划线）__
-</code></pre><p><em>斜体效果（单星号在前）斜体效果（单星号在后）</em><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/12/2017-02-21-Markdown语法示例/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <h3 id="react-redux-源码分析"><a href="#react-redux-源码分析" class="headerlink" title="react-redux 源码分析"></a>react-redux 源码分析</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看）</p>
+<h3 id="react-redux-应用结构："><a href="#react-redux-应用结构：" class="headerlink" title="react-redux 应用结构："></a>react-redux 应用结构：</h3><p><img src="./src/assets/react-redux.png" alt="react-redux 应用结构"><br>react-redux 主要就是完成了这两件事情<br>第一，提供 Provider 组件通过 context 方式向应用注入 store，使子节点可以获取到 state。<br>第二，使用 connect 高阶方法，获取并监听 store，然后根据 store state 和组件自身 props 计算得到新 props，注入该组件，并且可以通过监听 store，比较计算出的新 props 判断是否需要更新组件</p>
+<h3 id="源码解读"><a href="#源码解读" class="headerlink" title="源码解读"></a>源码解读</h3><h4 id="Provider"><a href="#Provider" class="headerlink" title="Provider"></a>Provider</h4><p><img src="./src/assets/code1.png" alt="undefined"></p>
+<p>Provider： 接收从 redux 而来的 store，以供子组件使用,同时在 Provider 组件中注册了 store 的监听，核心就是调用<code>store.subscribe</code>。</p>
+<h4 id="connect"><a href="#connect" class="headerlink" title="connect"></a>connect</h4><p>react 高阶组件，当组件需要获取或者想要改变 store 的时候使用,通常的使用方法。<br>connect(mapStateToProps,mapDispatchToProps)(App);<br>实际上它的 api 长这样：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function connect(mapStateToProps?, mapDispatchToProps?, mergeProps?, options?)`</span><br></pre></td></tr></table></figure>
+<p><code>mapStateToProps?: (state, ownProps?) =&gt; Object</code> 正常我们用到的都是第一个参数，当 store 变化的时候，会被调用，第二个参数是组件的 props，如果添加了第二个参数，除了 store 变化的时候调用，每次父组件传入的 props 变化的时候也会被调用。<br><code>mergeProps?: (stateProps, dispatchProps, ownProps) =&gt; Object</code> : 如果指定了这个参数，mapStateToProps() 与 mapDispatchToProps() 的执行结果和组件自身的 props 将传入到这个回调函数中。该回调函数返回的对象将作为 props 传递到被包装的组件中</p>
+<p><strong>Connect 的源码</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">export function createConnect(&#123;</span><br><span class="line">  connectHOC = connectAdvanced,</span><br><span class="line">  mapStateToPropsFactories = defaultMapStateToPropsFactories,</span><br><span class="line">  mapDispatchToPropsFactories = defaultMapDispatchToPropsFactories,</span><br><span class="line">  mergePropsFactories = defaultMergePropsFactories,</span><br><span class="line">  selectorFactory = defaultSelectorFactory</span><br><span class="line">&#125; = &#123;&#125;) &#123;</span><br><span class="line">  return function connect(</span><br><span class="line">    mapStateToProps,</span><br><span class="line">    mapDispatchToProps,</span><br><span class="line">    mergeProps,</span><br><span class="line">    &#123;</span><br><span class="line">      pure = true,</span><br><span class="line">      areStatesEqual = strictEqual,</span><br><span class="line">      areOwnPropsEqual = shallowEqual,</span><br><span class="line">      areStatePropsEqual = shallowEqual,</span><br><span class="line">      areMergedPropsEqual = shallowEqual,</span><br><span class="line">      ...extraOptions</span><br><span class="line">    &#125; = &#123;&#125;</span><br><span class="line">  ) &#123;</span><br><span class="line">    const initMapStateToProps = match(mapStateToProps, mapStateToPropsFactories, &apos;mapStateToProps&apos;)</span><br><span class="line">    const initMapDispatchToProps = match(mapDispatchToProps,mapDispatchToPropsFactories, &apos;mapDispatchToProps&apos;)</span><br><span class="line">    const initMergeProps = match(mergeProps, mergePropsFactories, &apos;mergeProps&apos;)</span><br><span class="line"></span><br><span class="line">    return connectHOC(selectorFactory, &#123;</span><br><span class="line">      // used in error messages</span><br><span class="line">      methodName: &apos;connect&apos;,</span><br><span class="line"></span><br><span class="line">      // used to compute Connect&apos;s displayName from the wrapped component&apos;s displayName.</span><br><span class="line">      getDisplayName: name =&gt; `Connect($&#123;name&#125;)`,</span><br><span class="line"></span><br><span class="line">      // if mapStateToProps is falsy, the Connect component doesn&apos;t subscribe to store state changes</span><br><span class="line">      shouldHandleStateChanges: Boolean(mapStateToProps),</span><br><span class="line"></span><br><span class="line">      // passed through to selectorFactory</span><br><span class="line">      // selectorFactory的传参</span><br><span class="line">      initMapStateToProps,</span><br><span class="line">      initMapDispatchToProps,</span><br><span class="line">      initMergeProps,</span><br><span class="line">      pure,</span><br><span class="line">      areStatesEqual,</span><br><span class="line">      areOwnPropsEqual,</span><br><span class="line">      areStatePropsEqual,</span><br><span class="line">      areMergedPropsEqual,</span><br><span class="line"></span><br><span class="line">      // any extra options args can override defaults of connect or connectAdvanced</span><br><span class="line">      ...extraOptions</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default createConnect()</span><br></pre></td></tr></table></figure>
+<p>这段我们可以知道，connect 是对 connectHOC（connectAdvanced）的封装，connectAdvanced 使用了 selectorFactory，来创建 selector, 选择器（selector）的作用就是计算 mapStateToProps，mapDispatchToProps, ownProps（来自父组件的 props）的结果，并将结果传给子组件 props。这样子组件可以通过 this.props 拿到 mapStateToProps 等的结果。</p>
+<h4 id="selectFactory"><a href="#selectFactory" class="headerlink" title="selectFactory"></a>selectFactory</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">export default function finalPropsSelectorFactory(</span><br><span class="line">  dispatch,</span><br><span class="line">  &#123; initMapStateToProps, initMapDispatchToProps, initMergeProps, ...options &#125;</span><br><span class="line">) &#123;</span><br><span class="line">  const mapStateToProps = initMapStateToProps(dispatch, options)</span><br><span class="line">  const mapDispatchToProps = initMapDispatchToProps(dispatch, options)</span><br><span class="line">  const mergeProps = initMergeProps(dispatch, options)</span><br><span class="line"></span><br><span class="line">  if (process.env.NODE_ENV !== &apos;production&apos;) &#123;</span><br><span class="line">    verifySubselectors(</span><br><span class="line">      mapStateToProps,</span><br><span class="line">      mapDispatchToProps,</span><br><span class="line">      mergeProps,</span><br><span class="line">      options.displayName</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  const selectorFactory = options.pure</span><br><span class="line">    ? pureFinalPropsSelectorFactory</span><br><span class="line">    : impureFinalPropsSelectorFactory</span><br><span class="line"></span><br><span class="line">  return selectorFactory(</span><br><span class="line">    mapStateToProps,</span><br><span class="line">    mapDispatchToProps,</span><br><span class="line">    mergeProps,</span><br><span class="line">    dispatch,</span><br><span class="line">    options</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>当 pure: true, selectorFactory 使用 pureFinalPropsSelectorFactory</li>
+<li>当 pure: false，selectorFactory 使用 impureFinalPropsSelectorFactory<br><strong>impureFinalPropsSelectorFactory</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">export function impureFinalPropsSelectorFactory(</span><br><span class="line">  mapStateToProps,</span><br><span class="line">  mapDispatchToProps,</span><br><span class="line">  mergeProps,</span><br><span class="line">  dispatch</span><br><span class="line">) &#123;</span><br><span class="line">  return function impureFinalPropsSelector(state, ownProps) &#123;</span><br><span class="line">    return mergeProps(</span><br><span class="line">      mapStateToProps(state, ownProps),</span><br><span class="line">      mapDispatchToProps(dispatch, ownProps),</span><br><span class="line">      ownProps</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>直接传入返回新的 props</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">export function pureFinalPropsSelectorFactory(</span><br><span class="line">  mapStateToProps,</span><br><span class="line">  mapDispatchToProps,</span><br><span class="line">  mergeProps,</span><br><span class="line">  dispatch,</span><br><span class="line">  &#123; areStatesEqual, areOwnPropsEqual, areStatePropsEqual &#125;</span><br><span class="line">) &#123;</span><br><span class="line">  let hasRunAtLeastOnce = false</span><br><span class="line">  let state</span><br><span class="line">  let ownProps</span><br><span class="line">  let stateProps</span><br><span class="line">  let dispatchProps</span><br><span class="line">  let mergedProps</span><br><span class="line"></span><br><span class="line">  function handleFirstCall(firstState, firstOwnProps) &#123;</span><br><span class="line">    state = firstState</span><br><span class="line">    ownProps = firstOwnProps</span><br><span class="line">    stateProps = mapStateToProps(state, ownProps)</span><br><span class="line">    dispatchProps = mapDispatchToProps(dispatch, ownProps)</span><br><span class="line">    mergedProps = mergeProps(stateProps, dispatchProps, ownProps)</span><br><span class="line">    hasRunAtLeastOnce = true</span><br><span class="line">    return mergedProps</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  function handleNewPropsAndNewState() &#123;</span><br><span class="line">    stateProps = mapStateToProps(state, ownProps)</span><br><span class="line"></span><br><span class="line">    if (mapDispatchToProps.dependsOnOwnProps)</span><br><span class="line">      dispatchProps = mapDispatchToProps(dispatch, ownProps)</span><br><span class="line"></span><br><span class="line">    mergedProps = mergeProps(stateProps, dispatchProps, ownProps)</span><br><span class="line">    return mergedProps</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  function handleNewProps() &#123;</span><br><span class="line">    if (mapStateToProps.dependsOnOwnProps)</span><br><span class="line">      stateProps = mapStateToProps(state, ownProps)</span><br><span class="line"></span><br><span class="line">    if (mapDispatchToProps.dependsOnOwnProps)</span><br><span class="line">      dispatchProps = mapDispatchToProps(dispatch, ownProps)</span><br><span class="line"></span><br><span class="line">    mergedProps = mergeProps(stateProps, dispatchProps, ownProps)</span><br><span class="line">    return mergedProps</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  function handleNewState() &#123;</span><br><span class="line">    const nextStateProps = mapStateToProps(state, ownProps)</span><br><span class="line">    const statePropsChanged = !areStatePropsEqual(nextStateProps, stateProps)</span><br><span class="line">    stateProps = nextStateProps</span><br><span class="line"></span><br><span class="line">    if (statePropsChanged)</span><br><span class="line">      mergedProps = mergeProps(stateProps, dispatchProps, ownProps)</span><br><span class="line"></span><br><span class="line">    return mergedProps</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  function handleSubsequentCalls(nextState, nextOwnProps) &#123;</span><br><span class="line">    const propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps)</span><br><span class="line">    const stateChanged = !areStatesEqual(nextState, state)</span><br><span class="line">    state = nextState</span><br><span class="line">    ownProps = nextOwnProps</span><br><span class="line"></span><br><span class="line">    if (propsChanged &amp;&amp; stateChanged) return handleNewPropsAndNewState()</span><br><span class="line">    if (propsChanged) return handleNewProps()</span><br><span class="line">    if (stateChanged) return handleNewState()</span><br><span class="line">    return mergedProps</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  return function pureFinalPropsSelector(nextState, nextOwnProps) &#123;</span><br><span class="line">    return hasRunAtLeastOnce</span><br><span class="line">      ? handleSubsequentCalls(nextState, nextOwnProps)</span><br><span class="line">      : handleFirstCall(nextState, nextOwnProps)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>根据最后的返回得出：<br>当第一次运行时，执行 handleFirstCall, 将三个 map 函数运行一遍，并将结果缓存下来<br>第二次运行时，执行 handleSubsequentCalls, 将新的值和缓存下来的值进行比较，如果没有变化就返回直接的 mergeProps，如果有变化就返回新的 mergeProps</p>
+<h4 id="connectAdvanced"><a href="#connectAdvanced" class="headerlink" title="connectAdvanced"></a>connectAdvanced</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br></pre></td><td class="code"><pre><span class="line">export default function connectAdvanced(</span><br><span class="line">  selectorFactory,</span><br><span class="line">  // options object:</span><br><span class="line">  &#123;</span><br><span class="line">    getDisplayName = name =&gt; `ConnectAdvanced($&#123;name&#125;)`,</span><br><span class="line">    methodName = &apos;connectAdvanced&apos;,</span><br><span class="line">    // ...</span><br><span class="line">    ...connectOptions</span><br><span class="line">  &#125; = &#123;&#125;</span><br><span class="line">) &#123;</span><br><span class="line"></span><br><span class="line">  const Context = context</span><br><span class="line"></span><br><span class="line">  const wrappedComponentName =</span><br><span class="line">      WrappedComponent.displayName || WrappedComponent.name || &apos;Component&apos;</span><br><span class="line"></span><br><span class="line">    const displayName = getDisplayName(wrappedComponentName)</span><br><span class="line"></span><br><span class="line">    const selectorFactoryOptions = &#123;</span><br><span class="line">      ...connectOptions,</span><br><span class="line">      getDisplayName,</span><br><span class="line">      methodName,</span><br><span class="line">      renderCountProp,</span><br><span class="line">      shouldHandleStateChanges,</span><br><span class="line">      storeKey,</span><br><span class="line">      displayName,</span><br><span class="line">      wrappedComponentName,</span><br><span class="line">      WrappedComponent</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    const &#123; pure &#125; = connectOptions</span><br><span class="line"></span><br><span class="line">    let OuterBaseComponent = Component</span><br><span class="line"></span><br><span class="line">    if (pure) &#123;</span><br><span class="line">      OuterBaseComponent = PureComponent</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function makeDerivedPropsSelector() &#123;</span><br><span class="line">      let lastProps</span><br><span class="line">      let lastState</span><br><span class="line">      let lastDerivedProps</span><br><span class="line">      let lastStore</span><br><span class="line">      let lastSelectorFactoryOptions</span><br><span class="line">      let sourceSelector</span><br><span class="line"></span><br><span class="line">      return function selectDerivedProps(</span><br><span class="line">        state,</span><br><span class="line">        props,</span><br><span class="line">        store,</span><br><span class="line">        selectorFactoryOptions</span><br><span class="line">      ) &#123;</span><br><span class="line">        if (pure &amp;&amp; lastProps === props &amp;&amp; lastState === state) &#123;</span><br><span class="line">          return lastDerivedProps</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (</span><br><span class="line">          store !== lastStore ||</span><br><span class="line">          lastSelectorFactoryOptions !== selectorFactoryOptions</span><br><span class="line">        ) &#123;</span><br><span class="line">          lastStore = store</span><br><span class="line">          lastSelectorFactoryOptions = selectorFactoryOptions</span><br><span class="line">          sourceSelector = selectorFactory(</span><br><span class="line">            store.dispatch,</span><br><span class="line">            selectorFactoryOptions</span><br><span class="line">          )</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        lastProps = props</span><br><span class="line">        lastState = state</span><br><span class="line"></span><br><span class="line">        const nextProps = sourceSelector(state, props)</span><br><span class="line"></span><br><span class="line">        lastDerivedProps = nextProps</span><br><span class="line">        return lastDerivedProps</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function makeChildElementSelector() &#123;</span><br><span class="line">      let lastChildProps, lastForwardRef, lastChildElement, lastComponent</span><br><span class="line"></span><br><span class="line">      return function selectChildElement(</span><br><span class="line">        WrappedComponent,</span><br><span class="line">        childProps,</span><br><span class="line">        forwardRef</span><br><span class="line">      ) &#123;</span><br><span class="line">        if (</span><br><span class="line">          childProps !== lastChildProps ||</span><br><span class="line">          forwardRef !== lastForwardRef ||</span><br><span class="line">          lastComponent !== WrappedComponent</span><br><span class="line">        ) &#123;</span><br><span class="line">          lastChildProps = childProps</span><br><span class="line">          lastForwardRef = forwardRef</span><br><span class="line">          lastComponent = WrappedComponent</span><br><span class="line">          console.log(&apos;childProps&apos;, childProps);</span><br><span class="line">          lastChildElement = (</span><br><span class="line">            &lt;WrappedComponent &#123;...childProps&#125; ref=&#123;forwardRef&#125; /&gt;</span><br><span class="line">          )</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return lastChildElement</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    class Connect extends OuterBaseComponent &#123;</span><br><span class="line">      constructor(props) &#123;</span><br><span class="line">        super(props)</span><br><span class="line">        //...</span><br><span class="line">        this.selectDerivedProps = makeDerivedPropsSelector()</span><br><span class="line">        this.selectChildElement = makeChildElementSelector()</span><br><span class="line">        this.indirectRenderWrappedComponent = this.indirectRenderWrappedComponent.bind(</span><br><span class="line">          this</span><br><span class="line">        )</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      indirectRenderWrappedComponent(value) &#123;</span><br><span class="line">        // calling renderWrappedComponent on prototype from indirectRenderWrappedComponent bound to `this`</span><br><span class="line">        return this.renderWrappedComponent(value)</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      renderWrappedComponent(value) &#123;</span><br><span class="line">       //...</span><br><span class="line">        const &#123; storeState, store &#125; = value</span><br><span class="line"></span><br><span class="line">        let wrapperProps = this.props</span><br><span class="line">        let forwardedRef</span><br><span class="line"></span><br><span class="line">        if (forwardRef) &#123;</span><br><span class="line">          wrapperProps = this.props.wrapperProps</span><br><span class="line">          forwardedRef = this.props.forwardedRef</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        let derivedProps = this.selectDerivedProps(</span><br><span class="line">          storeState,</span><br><span class="line">          wrapperProps,</span><br><span class="line">          store,</span><br><span class="line">          selectorFactoryOptions</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        return this.selectChildElement(</span><br><span class="line">          WrappedComponent,</span><br><span class="line">          derivedProps,</span><br><span class="line">          forwardedRef</span><br><span class="line">        )</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      render() &#123;</span><br><span class="line">        const ContextToUse =</span><br><span class="line">          this.props.context &amp;&amp;</span><br><span class="line">          this.props.context.Consumer &amp;&amp;</span><br><span class="line">          isContextConsumer(&lt;this.props.context.Consumer /&gt;)</span><br><span class="line">            ? this.props.context</span><br><span class="line">            : Context</span><br><span class="line"></span><br><span class="line">        return (</span><br><span class="line">          &lt;ContextToUse.Consumer&gt;</span><br><span class="line">            &#123;this.indirectRenderWrappedComponent&#125;</span><br><span class="line">          &lt;/ContextToUse.Consumer&gt;</span><br><span class="line">        )</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Connect.WrappedComponent = WrappedComponent</span><br><span class="line">    Connect.displayName = displayName</span><br><span class="line"></span><br><span class="line">    // ...</span><br><span class="line"></span><br><span class="line">    return hoistStatics(Connect, WrappedComponent)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>connectAdvanced 是一个高阶组件，将 selectorFactory 计算得出的 props 和组件原有的 props 一起传给 WrappedComponent；<br>hoist-non-react-statics 这个库，作用是避免在使用 HOC 时，导致类的 static 方法丢失的问题。详情见<a href="https://reactjs.org/docs/higher-order-components.html#static-methods-must-be-copied-over" target="_blank" rel="noopener">react doc</a></p>
+<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><p>1、<a href="https://juejin.im/post/5b8b5a60e51d4538c411ff12" target="_blank" rel="noopener">参考资料</a><br>2、<a href="https://juejin.im/post/5b8baa06e51d45388c445f5d" target="_blank" rel="noopener">参考资料</a></p>
+
+          
         
       
     </div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -368,6 +431,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -380,16 +447,22 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/09/2017-06-09-React生命周期/">
+  
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/29/gulp的使用/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="jiajie.Li">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Cherry's Blogs">
     </span>
 
@@ -399,12 +472,9 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/06/09/2017-06-09-React生命周期/" itemprop="url">
-                  React生命周期
+                <a class="post-title-link" href="/2018/10/29/gulp的使用/" itemprop="url">
+                  gulp的使用
                 </a>
               
             
@@ -413,18 +483,24 @@
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-09T15:54:16+08:00">
-                2017-06-09
-              </time>
-            
 
+              
+                
+              
+
+              <time title="Created: 2018-10-29 17:35:13" itemprop="dateCreated datePublished" datetime="2018-10-29T17:35:13+08:00">2018-10-29</time>
             
 
             
@@ -449,7 +525,437 @@
       </header>
     
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
+      
+      
+
+      
+        
+          <p>gulp，自动化的构建工具增加工作流程。gulp.js是基于Node.js构建的，利用Node.js流的威力，快速构建项目并减少频繁的io操作。<br>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/10/29/gulp的使用/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
+        
+      
+    </p></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/29/2017-02-21-Mac定时任务/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jiajie.Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cherry's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/29/2017-02-21-Mac定时任务/" itemprop="url">
+                  Mac定时任务
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-29 17:35:13" itemprop="dateCreated datePublished" datetime="2018-10-29T17:35:13+08:00">2018-10-29</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>使用Crontab实现定时任务<br>1、编辑crontab文件：<br>    <code>crontab -e</code><br>2、列出crontab文件<br>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/10/29/2017-02-21-Mac定时任务/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
+        
+      
+    </p></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/29/2017-02-21-Markdown语法示例/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jiajie.Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cherry's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/29/2017-02-21-Markdown语法示例/" itemprop="url">
+                  Markdown语法示例
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-29 17:35:13" itemprop="dateCreated datePublished" datetime="2018-10-29T17:35:13+08:00">2018-10-29</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="强调效果"><a href="#强调效果" class="headerlink" title="强调效果"></a>强调效果</h3><p><strong>粗体效果（双星号）</strong>  <strong>粗体效果（双下划线）</strong></p>
+<pre><code>**粗体效果（双星号）**  __粗体效果（双下划线）__
+</code></pre><p><em>斜体效果（单星号在前）斜体效果（单星号在后）</em><br>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/10/29/2017-02-21-Markdown语法示例/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+         
+          <!--/noindex-->
+        
+      
+    </p></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/29/2017-06-09-React生命周期/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jiajie.Li">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Cherry's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/10/29/2017-06-09-React生命周期/" itemprop="url">
+                  React生命周期
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-29 17:35:13" itemprop="dateCreated datePublished" datetime="2018-10-29T17:35:13+08:00">2018-10-29</time>
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -466,24 +972,29 @@
 }
 </code></pre><p>用来初始化state，绑定一些方法（bind methods）<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/06/09/2017-06-09-React生命周期/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/10/29/2017-06-09-React生命周期/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+         
           <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -497,6 +1008,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -509,16 +1024,22 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/05/22/2017-02-21-Linux常用命令/">
+  
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/29/2017-02-21-Linux常用命令/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="jiajie.Li">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Cherry's Blogs">
     </span>
 
@@ -528,11 +1049,8 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
-                <a class="post-title-link" href="/2017/05/22/2017-02-21-Linux常用命令/" itemprop="url">
+                <a class="post-title-link" href="/2018/10/29/2017-02-21-Linux常用命令/" itemprop="url">
                   Linux常用命令
                 </a>
               
@@ -542,18 +1060,24 @@
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-22T16:33:57+08:00">
-                2017-05-22
-              </time>
-            
 
+              
+                
+              
+
+              <time title="Created: 2018-10-29 17:35:13" itemprop="dateCreated datePublished" datetime="2018-10-29T17:35:13+08:00">2018-10-29</time>
             
 
             
@@ -578,7 +1102,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -591,24 +1117,29 @@
 <pre><code>ls -a   列出全部的文件，连同隐藏文件（开头为.的文件）一起列出来（常用）
 </code></pre><p>3、mkdir命令  创建一个文件夹的命令<br>   touch命令  创建一个文件<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/05/22/2017-02-21-Linux常用命令/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2018/10/29/2017-02-21-Linux常用命令/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+         
           <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -622,6 +1153,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -634,260 +1169,22 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/07/gulp的使用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jiajie.Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cherry's Blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/07/gulp的使用/" itemprop="url">
-                  gulp的使用
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-07T10:18:01+08:00">
-                2017-03-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>gulp，自动化的构建工具增加工作流程。gulp.js是基于Node.js构建的，利用Node.js流的威力，快速构建项目并减少频繁的io操作。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/07/gulp的使用/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
   
 
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/06/2017-02-21-Mac定时任务/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jiajie.Li">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Cherry's Blogs">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/06/2017-02-21-Mac定时任务/" itemprop="url">
-                  Mac定时任务
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-06T14:43:56+08:00">
-                2017-03-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>使用Crontab实现定时任务<br>1、编辑crontab文件：<br>    <code>crontab -e</code><br>2、列出crontab文件<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/06/2017-02-21-Mac定时任务/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/06/全面解析JavaScript中&&和||/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="jiajie.Li">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="Cherry's Blogs">
     </span>
 
@@ -897,9 +1194,6 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-            
-            
-              
                 
                 <a class="post-title-link" href="/2017/03/06/全面解析JavaScript中&&和||/" itemprop="url">
                   全面解析JavaScript中“&&”和“||”操作符
@@ -911,20 +1205,42 @@
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-06T14:42:36+08:00">
-                2017-03-06
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2017-03-06 14:42:36" itemprop="dateCreated datePublished" datetime="2017-03-06T14:42:36+08:00">2017-03-06</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-10-29 17:35:13" itemprop="dateModified" datetime="2018-10-29T17:35:13+08:00">2018-10-29</time>
+              
             
           </span>
 
@@ -947,7 +1263,9 @@
       </header>
     
 
-
+    
+    
+    
     <div class="post-body" itemprop="articleBody">
 
       
@@ -957,24 +1275,29 @@
         
           <p>逻辑 “||”<br>1、只要“||”前面为false,不管“||”后面是true还是false，都返回“||”后面的值。<br>2、只要“||”前面为true,不管“||”后面是true还是false，都返回“||”前面的值。<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/03/06/全面解析JavaScript中&&和||/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/03/06/全面解析JavaScript中&&和||/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+         
           <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
-    <div>
-      
-    </div>
+    
 
-    <div>
-      
-    </div>
+    
+    
+    
 
+    
+
+    
+
+    
 
     <footer class="post-footer">
       
@@ -988,6 +1311,10 @@
         <div class="post-eof"></div>
       
     </footer>
+  </div>
+  
+  
+  
   </article>
 
 
@@ -996,11 +1323,8 @@
 
   
 
-          
+
           </div>
-          
-
-
           
 
         </div>
@@ -1016,101 +1340,81 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
+    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.jpeg"
-               alt="jiajie.Li" />
-          <p class="site-author-name" itemprop="name">jiajie.Li</p>
-           
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">jiajie.Li</p>
               <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/LJJCherry" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/2746279093" target="_blank" title="weibo">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  weibo
-                </a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-globe"></i>
-              友情链接
-            </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://lishiqiang.com/" title="ShiQiang.Li" target="_blank">ShiQiang.Li</a>
-                </li>
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://www.renmaomin.com/" title="MaoMin.Ren" target="_blank">MaoMin.Ren</a>
-                </li>
-              
-            </ul>
           </div>
-        
 
-        
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
 
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
       </section>
 
       
@@ -1127,30 +1431,41 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
+        <div class="copyright"> &copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">jiajie.Li</span>
+
+  
+
+  
 </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Mist</a> v6.4.2</div>
+
+
 
 
         
+
+
+
+
+
+
+
 
         
       </div>
@@ -1162,6 +1477,11 @@
         
       </div>
     
+
+    
+	
+    
+
     
   </div>
 
@@ -1181,79 +1501,45 @@
 
 
 
-  
 
 
 
 
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-
-
-  
 
 
 
 
-	
+
+
+
+
 
 
 
 
 
   
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
 
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
 
-
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.2"></script>
 
-
-
-  
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.2"></script>
 
 
 
@@ -1264,10 +1550,52 @@
 
   
 
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.2"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
   
 
   
 
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
