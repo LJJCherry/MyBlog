@@ -108,21 +108,21 @@
 
 
 
-  <meta name="description" content="react-redux 源码分析前言项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看） react-redux 应用结构：react-redux 主要就是完成了这两件事情第一，提供 Provider 组件通过 context 方式向应用注入 s">
+  <meta name="description" content="react-redux 源码分析前言项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看）">
 <meta name="keywords" content="react-redux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react-redux源码解析">
 <meta property="og:url" content="http://yoursite.com/2020/03/27/react-redux源码解析/index.html">
 <meta property="og:site_name" content="Cherry&#39;s Blogs">
-<meta property="og:description" content="react-redux 源码分析前言项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看） react-redux 应用结构：react-redux 主要就是完成了这两件事情第一，提供 Provider 组件通过 context 方式向应用注入 s">
+<meta property="og:description" content="react-redux 源码分析前言项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://yoursite.com/2020/03/27/react-redux源码解析/src/assets/react-redux.png">
-<meta property="og:image" content="http://yoursite.com/2020/03/27/react-redux源码解析/src/assets/code1.png">
-<meta property="og:updated_time" content="2020-03-27T07:54:04.782Z">
+<meta property="og:image" content="https://github.com/LJJCherry/react-redux-analyse/blob/master/src/assets/react-redux.png">
+<meta property="og:image" content="https://github.com/LJJCherry/react-redux-analyse/blob/master/src/assets/code1.png">
+<meta property="og:updated_time" content="2020-03-27T08:06:03.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react-redux源码解析">
-<meta name="twitter:description" content="react-redux 源码分析前言项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看） react-redux 应用结构：react-redux 主要就是完成了这两件事情第一，提供 Provider 组件通过 context 方式向应用注入 s">
-<meta name="twitter:image" content="http://yoursite.com/2020/03/27/react-redux源码解析/src/assets/react-redux.png">
+<meta name="twitter:description" content="react-redux 源码分析前言项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看）">
+<meta name="twitter:image" content="https://github.com/LJJCherry/react-redux-analyse/blob/master/src/assets/react-redux.png">
 
 
 
@@ -342,7 +342,7 @@
                 
               
 
-              <time title="Created: 2020-03-27 15:52:53 / Modified: 15:54:04" itemprop="dateCreated datePublished" datetime="2020-03-27T15:52:53+08:00">2020-03-27</time>
+              <time title="Created: 2020-03-27 15:52:53 / Modified: 16:06:03" itemprop="dateCreated datePublished" datetime="2020-03-27T15:52:53+08:00">2020-03-27</time>
             
 
             
@@ -381,8 +381,9 @@
 
       
         <h3 id="react-redux-源码分析"><a href="#react-redux-源码分析" class="headerlink" title="react-redux 源码分析"></a>react-redux 源码分析</h3><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>项目基于 create-react-app 创建, 在此基础上引入了 redux、将 react-redux 6.0.1 的版本直接下载下来放到了项目的 src 目录，方便调试（打个 console 看看）</p>
-<h3 id="react-redux-应用结构："><a href="#react-redux-应用结构：" class="headerlink" title="react-redux 应用结构："></a>react-redux 应用结构：</h3><p><img src="./src/assets/react-redux.png" alt="react-redux 应用结构"><br>react-redux 主要就是完成了这两件事情<br>第一，提供 Provider 组件通过 context 方式向应用注入 store，使子节点可以获取到 state。<br>第二，使用 connect 高阶方法，获取并监听 store，然后根据 store state 和组件自身 props 计算得到新 props，注入该组件，并且可以通过监听 store，比较计算出的新 props 判断是否需要更新组件</p>
-<h3 id="源码解读"><a href="#源码解读" class="headerlink" title="源码解读"></a>源码解读</h3><h4 id="Provider"><a href="#Provider" class="headerlink" title="Provider"></a>Provider</h4><p><img src="./src/assets/code1.png" alt="undefined"></p>
+<a id="more"></a>
+<h3 id="react-redux-应用结构："><a href="#react-redux-应用结构：" class="headerlink" title="react-redux 应用结构："></a>react-redux 应用结构：</h3><p><img src="https://github.com/LJJCherry/react-redux-analyse/blob/master/src/assets/react-redux.png" alt="react-redux 应用结构"><br>react-redux 主要就是完成了这两件事情<br>第一，提供 Provider 组件通过 context 方式向应用注入 store，使子节点可以获取到 state。<br>第二，使用 connect 高阶方法，获取并监听 store，然后根据 store state 和组件自身 props 计算得到新 props，注入该组件，并且可以通过监听 store，比较计算出的新 props 判断是否需要更新组件</p>
+<h3 id="源码解读"><a href="#源码解读" class="headerlink" title="源码解读"></a>源码解读</h3><h4 id="Provider"><a href="#Provider" class="headerlink" title="Provider"></a>Provider</h4><p><img src="https://github.com/LJJCherry/react-redux-analyse/blob/master/src/assets/code1.png" alt="Provider"></p>
 <p>Provider： 接收从 redux 而来的 store，以供子组件使用,同时在 Provider 组件中注册了 store 的监听，核心就是调用<code>store.subscribe</code>。</p>
 <h4 id="connect"><a href="#connect" class="headerlink" title="connect"></a>connect</h4><p>react 高阶组件，当组件需要获取或者想要改变 store 的时候使用,通常的使用方法。<br>connect(mapStateToProps,mapDispatchToProps)(App);<br>实际上它的 api 长这样：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">function connect(mapStateToProps?, mapDispatchToProps?, mergeProps?, options?)`</span><br></pre></td></tr></table></figure>
@@ -527,8 +528,6 @@
                 <div class="site-state-item site-state-tags">
                   <a href="/tags/index.html">
                     
-                    
-                      
                     
                       
                     
