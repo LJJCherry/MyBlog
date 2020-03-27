@@ -19,7 +19,7 @@
 
     hexo generate
 
-3 启动本地服务
+3、启动本地服务
 
     hexo server
 
